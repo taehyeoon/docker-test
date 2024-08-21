@@ -1,4 +1,4 @@
-FROM openjdk:17-jre
-COPY build/libs/docker-test-*.jar app.jar
+FROM openjdk:17-alpine
+COPY build/libs/Deploy_test_proj-*.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
